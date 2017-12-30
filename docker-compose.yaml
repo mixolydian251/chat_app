@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+
+  app:
+    image: mixolydian251/dapper_developer
+    deploy: 
+      replicas: 1
+    ports: 
+      - "80:3000"
+
+
