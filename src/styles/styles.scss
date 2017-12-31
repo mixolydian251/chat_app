@@ -5,3 +5,96 @@
 @import "base/reset";
 
 @import "components/button";
+
+
+.chat-container{
+  width: 100vw;
+}
+
+
+.chat-box{
+  height: calc(100vh - 45px);
+  overflow: scroll;
+  padding-bottom: 10vh;
+}
+
+
+.header{
+  width: 100vw;
+  text-align: center;
+  background-image: linear-gradient(to bottom right, $light_blue, $purple);
+  color: white;
+  font-size: 3rem;
+}
+
+.message{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  &__box {
+    min-height: 10rem;
+    min-width: 16.2rem;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 0.5rem 2rem;
+    margin: 2rem;
+    border-radius: 5px;
+
+    &--left{
+      background-image: linear-gradient(to bottom right, $light_blue, $purple);
+    }
+    &--right{
+      background-image: linear-gradient(to bottom right, $yellow, $orange);
+    }
+  }
+  &__name {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  &__text {
+    color: white;
+    font-size: 1.4rem;
+    padding: 2rem 0;
+  }
+  &__date {
+    color: white;
+    font-size: 1.1rem;
+  }
+  &__right {
+    align-items: flex-end
+  }
+  &__left{
+    align-items: flex-start
+  }
+}
+
+
+.form{
+  background-image: linear-gradient(to bottom right, $light_blue, $purple);
+  width: 100vw;
+  height: 10vh;
+  max-height: 150px;
+  position:absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  &__name{
+    width: 20%;
+    height: 70%;
+  }
+  &__text{
+    width: 40%;
+    height: 70%;
+  }
+  &__button{
+    width: 15%;
+    height: 70%;
+  }
+}
+
